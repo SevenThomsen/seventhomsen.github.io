@@ -7,7 +7,7 @@ body, html {
 }
 
 .bgimg {
-    background-image: url('images/background_main.jpg') no-repeat center center;
+    background-image: url('https://raw.githubusercontent.com/SevenThomsen/SevenThomsen.github.io/master/images/background_main.jpg') no-repeat center center;
     height: 100%;
     background-position: center;
     background-size: cover;
