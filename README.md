@@ -1,1 +1,1 @@
-# SevenThomsen.github.io
+# szn7.github.io
