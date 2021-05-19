@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap');
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -172,13 +173,18 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
+		font-family: 'Oxygen', sans-serif;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
-		font-weight: 600;
+		font-weight: 550;
 		line-height: 1.65;
 		margin: 0 0 1em 0;
+		font-family: 'Bebas Neue', cursive;
+		-webkit-animation: colorchange 25s infinite alternate;
+		-webkit-transition-duration: 0.3s;
+		transition-duration: 0.3s;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -3943,4 +3949,66 @@ input, select, textarea {
 			transform: none;
 			opacity: 1;
 			visibility: visible;
+		}
+	
+	/* Color change animations */
+		 @-webkit-keyframes colorchange { 0% 
+			 10% { color: #8e44ad; }
+			 20% { color: #1abc9c; }
+			 30% { color: #d35400; }
+			 40% { color: #00cc66; }
+			 50% { color: deepskyblue; }
+			 60% { color: #cc66ff; }
+			 70% { color: #2980b9; }
+			 80% { color: #f1c40f; }
+			 90% { color: #2980b9; }
+			 100% { color: pink; }
+		 }
+		 
+		 @-webkit-keyframes fillchange { 0% 
+			 10% { fill: #8e44ad; }
+			 20% { fill: #1abc9c; }
+			 30% { fill: #d35400; }
+			 40% { fill: #00cc66; }
+			 50% { fill: deepskyblue; }
+			 60% { fill: #cc66ff; }
+			 70% { fill: #2980b9; }
+			 80% { fill: #f1c40f; }
+			 90% { fill: #2980b9; }
+			 100% { fill: pink; }
+		 }
+	 
+	 /* Shutter background effect */
+		 .shutter {
+		  -webkit-transform: perspective(1px) translateZ(0);
+		  transform: perspective(1px) translateZ(0);
+		  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+		  -webkit-transition-duration: 0.3s;
+		  transition-duration: 0.3s;
+		}
+		
+		.shutter:before {
+		  content: "";
+		  position: absolute;
+		  z-index: -1;
+		  top: 0;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  background: #404040;
+		  -webkit-transform: scaleY(0);
+		  transform: scaleY(0);
+		  -webkit-transform-origin: 50%;
+		  transform-origin: 50%;
+		  -webkit-transition-property: transform;
+		  transition-property: transform;
+		  -webkit-transition-duration: 0.3s;
+		  transition-duration: 0.3s;
+		  -webkit-transition-timing-function: ease-out;
+		  transition-timing-function: ease-out;
+		}
+
+		.shutter:hover:before, shutter:focus:before, .shutter:active:before {
+		  -webkit-transform: scaleY(1);
+		  transform: scaleY(1);
 		}
