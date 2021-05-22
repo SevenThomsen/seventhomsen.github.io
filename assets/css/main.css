@@ -3803,7 +3803,7 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		pointer-events: none;
-		background: rgba(255, 255, 255, 0.1);
+		background: rgba(0, 0, 0, 0.7);
 		box-shadow: none;
 		height: 100%;
 		left: 0;
