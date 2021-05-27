@@ -3458,10 +3458,6 @@ input, select, textarea {
 					}
 
 			#banner > .inner .content {
-				display: -moz-flex;
-				display: -webkit-flex;
-				display: -ms-flex;
-				display: flex;
 				-moz-align-items: center;
 				-webkit-align-items: center;
 				-ms-align-items: center;
@@ -3984,7 +3980,7 @@ input, select, textarea {
 			75% { box-shadow: inset 0 0 0 2px 7fbabe; }
 			100% { box-shadow: inset 0 0 0 2px #8592e0; }
 		 }
-	 
+		 
 	 /* Shutter background effect */
 		 .shutter {
 		  -webkit-transform: perspective(1px) translateZ(0);
