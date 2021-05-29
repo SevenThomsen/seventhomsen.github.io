@@ -3268,7 +3268,7 @@ input, select, textarea {
 			}
 
 			#header.alt.style2 .logo strong {
-				color: #7abadc;
+				color: #000000;
 			}
 
 			#header.alt.style3 .logo strong {
@@ -3462,7 +3462,7 @@ input, select, textarea {
 				-webkit-align-items: center;
 				-ms-align-items: center;
 				align-items: center;
-				margin: 0 0 2em 0;
+				margin: 0 0 5em 0;
 			}
 
 				#banner > .inner .content > * {
@@ -3496,7 +3496,7 @@ input, select, textarea {
 		}
 
 		#banner.style2:after {
-			background-color: #7abadc;
+			background-color: #000000;
 		}
 
 		#banner.style3:after {
